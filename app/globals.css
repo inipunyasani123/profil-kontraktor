@@ -398,6 +398,20 @@
   .kepala > span:first-child {
     border-inline-start: 0;
   }
+  /* Layar sangat sempit: judul di kepala gambar boleh turun baris, bukan terpotong. */
+  @media (max-width: 380px) {
+    .kepala {
+      letter-spacing: 0.03em;
+    }
+    .kepala > span {
+      padding: 0.5rem 0.5rem;
+    }
+    .kepala > span:first-child {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+    }
+  }
   .lembar-biru {
     background-color: var(--color-biru);
     background-image:
@@ -433,7 +447,7 @@
   }
   .judul-besar {
     font-size: clamp(2.6rem, 11vw, 5.5rem);
-    line-height: 0.94;
+    line-height: 0.98;
     font-weight: 700;
     letter-spacing: 0.004em;
   }

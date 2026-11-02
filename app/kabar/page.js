@@ -41,7 +41,7 @@ export default function Kabar() {
                 </div>
                 <div className={besar ? 'lg:col-span-6' : 'mt-5'}>
                   <p className="label-mono">
-                    {t.nomor} · {tanggalId(t.tanggal)} · {menitBaca(t)} menit baca
+                    {tanggalId(t.tanggal)} · {menitBaca(t)} menit baca
                   </p>
                   <h2 id={`j-${t.slug}`} className="judul-sedang mt-2">
                     <Link href={`/kabar/${t.slug}`} className="no-underline hover:underline">

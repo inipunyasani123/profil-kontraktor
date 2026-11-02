@@ -174,7 +174,7 @@ export default function Hitung() {
           <div className="lg:col-span-7">
             <p className="cap">Contoh harga, bukan harga pasar</p>
             <table className="tabel-tarif mt-4">
-              <caption>Tarif contoh per m², sudah termasuk bahan dan upah</caption>
+              <caption>Tarif contoh dalam rupiah per m², sudah termasuk bahan dan upah</caption>
               <thead>
                 <tr>
                   <th scope="col">Pekerjaan</th>

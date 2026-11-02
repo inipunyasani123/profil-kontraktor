@@ -58,7 +58,7 @@ export default async function Tulisan({ params }) {
       <div className="grid gap-5 lg:grid-cols-12 lg:items-start">
         <Lembar as="article" no={t.nomor} judul="Kabar" skala="Tanpa skala" className="lg:col-span-8" labelledby="judul-tulisan">
           <p className="label-mono">
-            {t.nomor} · {tanggalId(t.tanggal)} · {menitBaca(t)} menit baca
+            {tanggalId(t.tanggal)} · {menitBaca(t)} menit baca
           </p>
           <h1 id="judul-tulisan" className="judul-artikel mt-3">
             {t.judul}

@@ -88,7 +88,7 @@ export default function Profil() {
         <Lembar no="A-15" judul="Alat dan bahan" skala="1 : 5" className="lg:col-span-12" labelledby="judul-alat">
           <p className="label-mono">Foto contoh berlisensi CC0, bukan foto alat kami</p>
           <h2 id="judul-alat" className="judul-sedang mt-2">
-            Yang selalu ada di tas
+            Alat dan bahan yang kami pakai
           </h2>
           <ul className="mt-6 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
             {alat.map((a) => (
@@ -112,7 +112,7 @@ export default function Profil() {
               <h2 id="judul-wilayah" className="judul-sedang mt-2">
                 Medan dan sekitarnya
               </h2>
-              <p className="mt-3 max-w-[52ch]">Bowplank berkantor di Medan. Untuk rumah di luar kota, ceritakan lokasinya dulu supaya kami bisa bilang apakah bisa dikerjakan.</p>
+              <p className="mt-3 max-w-[52ch]">Bowplank berkantor di Medan. Untuk rumah di luar kota, ceritakan lokasinya dulu, nanti kami kabari apakah bisa dikerjakan.</p>
             </div>
             <div className="flex flex-wrap gap-4 lg:col-span-4 lg:justify-end">
               <Link href="/layanan" className="tombol tombol-terang">

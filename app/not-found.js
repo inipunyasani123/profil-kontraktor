@@ -11,7 +11,7 @@ export const metadata = {
 export default function NotFound() {
   return (
     <div className="wadah py-10 lg:py-16">
-      <Lembar no="A-00" judul="Lembar tidak ditemukan" skala="Tanpa skala" labelledby="judul-404">
+      <Lembar no="A-00" judul="Tidak ditemukan" skala="Tanpa skala" labelledby="judul-404">
         <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-7">
             <p className="label-mono">Galat 404</p>

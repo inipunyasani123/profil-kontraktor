@@ -4,7 +4,7 @@ Situs company profile demo untuk paket **Standar UMKM** PintuWeb. Bowplank adala
 
 **Demo live:** https://profil-kontraktor.pintuweb.id
 
-![Tangkapan layar Bowplank](public/og.jpg)
+![Gambar pratinjau Bowplank](public/og.jpg)
 
 > Bowplank adalah usaha fiktif. Nama, alamat, jam kerja, layanan, lama kerja, proyek contoh, tulisan, dan tarif per m² semuanya rekaan; tarifnya hanya contoh, bukan harga pasar atau penawaran. Tidak ada nomor telepon, email, ulasan, atau pelanggan sungguhan. Tidak ada data yang dikirim ke server: formulir kontak dan tombol hitung hanya menyusun pesan WhatsApp tanpa nomor tujuan.
 

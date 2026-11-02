@@ -44,8 +44,11 @@ export default function Footer() {
       </div>
 
       <div className="kepala" aria-hidden="true">
-        <span>Bowplank · Kontraktor renovasi · Medan</span>
-        <span>Rev. 02.11.2026</span>
+        <span>
+          <span className="max-sm:hidden">Bowplank · Kontraktor renovasi · Medan</span>
+          <span className="sm:hidden">Bowplank · Medan</span>
+        </span>
+        <span>Rev. A</span>
         <span>A-00</span>
       </div>
     </footer>

@@ -106,7 +106,7 @@ export default function Layanan() {
         </div>
 
         {proyek.map((p) => (
-          <Lembar key={p.slug} no={p.nomor} judul={p.nama} skala="1 : 25" className="lg:col-span-12" labelledby={`j-${p.slug}`}>
+          <Lembar key={p.slug} no={p.nomor} judul={p.judulLembar} skala="1 : 25" className="lg:col-span-12" labelledby={`j-${p.slug}`}>
             <div className="grid gap-6 lg:grid-cols-12 lg:items-start">
               <div className="lg:col-span-7">
                 <SebelumSesudah kunci={p.slug} nama={p.nama} />
@@ -147,7 +147,7 @@ export default function Layanan() {
             <div className="lg:col-span-8">
               <p className="label-mono">Langkah berikutnya</p>
               <h2 id="judul-lanjut" className="judul-sedang mt-2">
-                Mau tahu kira-kira biayanya?
+                Mau tahu perkiraan biayanya?
               </h2>
               <p className="mt-3 max-w-[52ch]">Coba hitung kasar dulu, lalu kirim hasilnya lewat WhatsApp. Hitungan sungguhan kami buat setelah ukur di tempat.</p>
             </div>

@@ -14,7 +14,7 @@ export default function Beranda() {
     <div className="wadah py-6 lg:py-10">
       <div className="grid gap-5 lg:grid-cols-12">
         {/* A-01: lembar pembuka */}
-        <Lembar no="A-01" judul="Denah depan rumah" skala="1 : 50" className="lg:col-span-12" labelledby="judul-beranda">
+        <Lembar no="A-01" judul="Lembar pembuka" skala="1 : 50" className="lg:col-span-12" labelledby="judul-beranda">
           <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-7">
               <p className="label-mono">Kontraktor renovasi dan bangun rumah · {site.kota}</p>
@@ -136,28 +136,8 @@ export default function Beranda() {
           </Link>
         </Lembar>
 
-        {/* A-06: kabar */}
-        <Lembar no="A-06" judul="Kabar" skala="Tanpa skala" className="lg:order-2 lg:col-span-7" labelledby="judul-kabar">
-          <p className="label-mono">Kabar</p>
-          <h2 id="judul-kabar" className="judul-sedang mt-2">
-            Tulisan dari lapangan
-          </h2>
-          <ul className="mt-5 border-b-[1.5px] border-tinta">
-            {tulisan.map((t) => (
-              <li key={t.slug}>
-                <Link href={`/kabar/${t.slug}`} className="block border-t-[1.5px] border-tinta py-3 no-underline hover:bg-biru-pucat">
-                  <span className="label-mono block">
-                    {tanggalId(t.tanggal)} · {menitBaca(t)} menit baca
-                  </span>
-                  <span className="mt-1 block font-display text-xl font-medium uppercase leading-tight tracking-wide">{t.judul}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Lembar>
-
-        {/* A-07: kontak */}
-        <Lembar no="A-07" judul="Hubungi kami" skala="Tanpa skala" className="lg:order-1 lg:col-span-5" labelledby="judul-kontak">
+        {/* A-06: kontak */}
+        <Lembar no="A-06" judul="Hubungi kami" skala="Tanpa skala" className="lg:col-span-5" labelledby="judul-kontak">
           <p className="label-mono">Kontak</p>
           <h2 id="judul-kontak" className="judul-sedang mt-2">
             Ceritakan rumahmu
@@ -183,6 +163,26 @@ export default function Beranda() {
             </a>
           </div>
         </Lembar>
+        {/* A-07: kabar */}
+        <Lembar no="A-07" judul="Kabar" skala="Tanpa skala" className="lg:col-span-7" labelledby="judul-kabar">
+          <p className="label-mono">Kabar</p>
+          <h2 id="judul-kabar" className="judul-sedang mt-2">
+            Tulisan dari lapangan
+          </h2>
+          <ul className="mt-5 border-b-[1.5px] border-tinta">
+            {tulisan.map((t) => (
+              <li key={t.slug}>
+                <Link href={`/kabar/${t.slug}`} className="block border-t-[1.5px] border-tinta py-3 no-underline hover:bg-biru-pucat">
+                  <span className="label-mono block">
+                    {tanggalId(t.tanggal)} · {menitBaca(t)} menit baca
+                  </span>
+                  <span className="mt-1 block font-display text-xl font-medium uppercase leading-tight tracking-wide">{t.judul}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Lembar>
+
       </div>
     </div>
   );
